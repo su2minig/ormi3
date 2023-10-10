@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+        div{
+            /* 실제크기는 width(height)= witdh(height)+padding*2+border*2 */
+            width: 100px;
+            height:100px;
+            box-sizing: content-box;
+            /* 패딩은 top-right-bottom-left순 || padding: ()px== 4방향 ()px  */
+            padding: 20px;
+            border: 10px solid red;
+            margin: 20px auto;
+        }
+        span{
+            padding: 20px;
+            border: 10px solid red;
+            margin: 20px;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>box</div>
+    <span>inline</span>
+    <button type="button">버튼</button>
+</body>
+</html>

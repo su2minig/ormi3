@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>시간
+        <span id="time">0</span>
+    </p>
+    <button>로그</button>
+    <script>
+        let 타이머 = 0;
+        //실행될때마다 타이머 1증가 span값을 변경해주는 함수
+        const 콜백함수 = ()=>{
+            타이머+=1;
+            const span = document.getElementById("time");
+            span.innerText = 타이머
+        }
+        const 시간 = 1000
+        //setInterval(콜백함수,시간)
+        //1초가 지날때마다 콜백함수 실행
+        setInterval(콜백함수,시간)
+
+        document.querySelector("button")
+        button.addEventListener("click", ()=>{
+            console.log("버튼클릭");
+            const span = document.getElementById("time");
+            span.innerText = 타이머
+            // 타이머+=10;
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        transition: 1s;
+    }
+    .red{
+        background-color: red;
+        width: 10px;
+        transition: 1s;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+    }
+</style>
+<body>
+    <!-- <div></div> -->
+    
+    <!-- 투두리스트 -->
+    <!-- <ul>
+
+    </ul>
+    <input type="text">
+    <button>버튼</button> -->
+
+    <!-- 스타일조작 -->
+    <!-- <p>수업 속도가 빠릅니다...</p> -->
+
+    <!-- data속성사용하기 -->
+    <!-- <img
+    class="terran battle-cruiser"
+    src="battle-cruiser.png"
+    data-ship-id="324"
+    data-weapons="laser"
+    data-health="400"
+    data-mana="250"
+    data-skill="yamato-cannon"
+    /> -->
+</body>
+<script>
+    // div를 클릭하면 div클래스를 추가해서 빨간색으로 변경해주는 이벤트
+    // const myDiv = document.querySelector("div");
+    // myDiv.addEventListener("click",()=>{
+    //     if (toggle){
+    //     myDiv.classList.add("red")
+    // } else{
+    //     myDiv.classList.remove("red")
+    // }
+    // toggle=!toggle
+    // })
+
+
+//     const myBtn = document.querySelector("button");
+//     const myUl = document.querySelector("ul");
+
+//     myBtn.addEventListener('click', function(){
+// 	for(let i=0; i < 5; i++){
+// 		const myLi = document.createElement('li');
+// 		myUl.appendChild(myLi);
+// 	}
+// })
+
+
+// const myBtn = document.querySelector("button");
+// const myUl = document.querySelector("ul");
+
+// myBtn.addEventListener('click', function(){
+// 	for(let i=0; i < 5; i++){
+// 		const myLi = document.createElement('li');
+// 		const btnDel = document.createElement('button');
+//     const btnTxt = document.createTextNode('버튼');
+
+//     btnDel.append(btnTxt);
+// 		btnDel.addEventListener('click', ()=>{
+// 			myLi.remove();
+// 		});
+// 		myLi.append('삭제하기: ', btnDel);
+// 		myUl.appendChild(myLi);
+//     }
+// });
+// 인풋요소를 가져옵니다
+// 인풋 요소안의 값 가져오기
+// 인풋요소안의 값 li에 추가
+
+// const myBtn = document.querySelector("button");
+// const myUl = document.querySelector("ul");
+// const input = document.querySelector("input");
+// myBtn.addEventListener('click', function(){
+//     const inputText = input.value;
+// 	if (inputText.trim()===""){
+//         return;  //이 뒤에있는 코드는 실행되지 않습니다
+//     }
+// 	const myLi = document.createElement('li');
+// 	const btnDel = document.createElement('button');
+//     const btnTxt = document.createTextNode('삭제');
+
+//     btnDel.append(btnTxt);
+// 		btnDel.addEventListener('click', ()=>{
+// 			myLi.remove();
+// 		});
+// 		myLi.append('할일: ',inputText ,btnDel);
+// 		myUl.appendChild(myLi);
+    
+// });
+// style 조작하기
+// const target = document.querySelector("p");
+// const targetColor = target.style.color;
+// console.log(targetColor);
+// target.style.color = "red";
+// target.style.fontWeight = "bold";
+
+
+// data속성 사용하기
+// const img = document.querySelector('img')
+// console.log(img.dataset);
+// console.log(img.dataset.shipId);
+</script>
+</html>

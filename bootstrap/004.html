@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .col-md-3{
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- mock img -->
+    <!-- bootstrap 버전업이 되면서 class 명이 달라졌다. -->
+    <!-- 따라서 class 적용이 안될 때에는 버전을 확인해야한다. -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./20170102155935_2851.jpg" alt="그림">
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="./20170102155935_2851.jpg" alt="그림">
+            </div>
+            <!-- <div class="col-md-6">
+                <img class="rounded" src="./20170102155935_2851.jpg" alt="그림">
+            </div> -->
+            <!-- 정말 많이 사용합니다! 다만, 정사각형일때 사용합니다 -->
+            <!-- <div class="col-md-6">
+                <img class="rounded-circle" src="./20170102155935_2851.jpg" alt="그림">
+            </div> -->
+            <div class="col-md-6">
+                <img class="img-thumbnail" src="./20170102155935_2851.jpg" alt="그림">
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

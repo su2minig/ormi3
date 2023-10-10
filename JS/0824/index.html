@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 2보다 크거나 또는 7보다 작은 x값
+        // const x=1;
+        // const S = x>2;
+        // const M = x<7;
+        // const A = S||M;
+        // console.log(A);
+        
+        // 2보다 크지않거나 또는 7보다 작은 x값
+        const x=1;
+        const S = !(x>2) //또는 const S = x<2;
+        const M = x<7;
+        const A = S||M;
+        console.log(A);
+
+        //함수 : 함수를 실행하면 일련의 과정을 거치고 결과값을 돌려준다
+        //f(x)= x+2
+
+        function plus2(x){
+            const result = x+2;  //로직
+            return result          //리턴
+        }
+        const plus2Result = plus2(1337);
+        console.log(plus2Result)
+
+    </script>
+</body>
+</html>

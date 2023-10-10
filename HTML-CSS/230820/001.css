@@ -1,0 +1,36 @@
+*{
+    padding: 5px;
+    text-align: center;
+}
+p{
+    font-weight: bold;
+    color: rgb(166, 166, 166);
+}
+[for=user-id]{
+    padding: 5px;
+    margin: 0px 5px;
+    font-weight: bold;
+}
+
+[for=user-pw]{
+    margin: 0px;
+    font-weight: bold;
+}
+#user-id{
+    margin-left: 5px;
+}
+[for=id-save]{
+    font-weight: bold;
+}
+div>input:not(#id-save){
+    width: 400px;
+}
+button{
+    background-color: rgb(74, 104, 217);
+    width: 500px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}

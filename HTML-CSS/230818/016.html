@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자우선순위</title>
+    <style>
+        #hello {
+            color:violet;
+        }
+        .hello {
+            color:yellow;
+        }
+        p{
+            color:royalblue;
+            background-color: green;
+        }
+        p {
+            color: red;
+            /* color: red !important; */
+        }
+        
+    </style>
+</head>
+<body>
+    <p class="hello" id="hello">안녕하세요</p>
+    <p>안녕하세요</p>
+    <p style="color:gold;">안녕하세요</p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.writeboard{
+    width: 1000px;
+    margin: auto;
+}
+.hint{
+    padding: 20px 0px 10px 0px;
+}
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+}
+label{
+    background-color: #ddd;
+}
+.file{
+    
+}

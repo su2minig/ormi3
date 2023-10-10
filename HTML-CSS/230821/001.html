@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* only-child  형ㅇ제가 ㅓㅄ는 요소 */
+    li:only-child{
+        color:red;
+    }
+    ol.item{
+        border: 2px solid royalblue;
+    }
+    ol .item{
+        background-color: yellow;
+    }
+    ol .item.bold{
+        border: 2px solid red;
+    }
+
+</style>
+<body>
+    <ol>
+        <li class="item">hello</li>
+        <li class="iten bold">hello</li>
+        <li>hello</li>
+    </ol>
+    <ol class="item">
+        <li>hello</li>
+    </ol>
+    <p>
+        hello
+        <strong>every one!</strong>
+        <strong>every one!</strong>
+    </p>
+    <p>
+        hello
+        <strong>every one!</strong>
+    </p>
+</body>
+</html>

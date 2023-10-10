@@ -1,0 +1,207 @@
+/* 초기화 reset */
+/* 폰트 */
+/* body{font-family:} */
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+body,
+h1,
+h2,
+h3,
+p,
+button,
+fieldset,
+legend,
+ul,
+ol,
+li{
+    margin: 0;
+    padding: 0;
+}
+.login-btn:enabled{
+    cursor: pointer;
+}
+.login-btn:disabled{
+    background-color: #767676;
+}
+.login-btn:hover{
+    background-color: aqua;
+}
+ul,
+li,
+ol{
+    list-style: none;
+}
+
+/* css 변수
+:root{
+    --graycolor:#ddd;
+}
+이름{
+--변수명
+}
+ex) border:1px solid var(--graycolor); */
+
+
+/* main------- */
+/* 로그인페이지 */
+.login{
+    width: 400px;
+    background-color: white;
+    margin: auto;
+
+}
+.main-title,
+.main-desc{
+    text-align: center;
+}
+.main-title{
+    font-size: 24px;
+}
+.main-desc{
+    color: #767676;
+    margin: 15px 0 30px 0;
+}
+/* 컨테이너 1 */
+.main-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+/* 컨테이너 2 */
+.main-form div{
+    display: flex;
+    align-items: center;
+}
+.main-form div label{
+    width: 100px;
+    font-weight: bold;
+}
+.flex-input input{
+    height: 25px;
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.login-btn{
+    background-color: royalblue;
+    border: 0;
+    border-radius: 5px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 2s;
+    width: 399px;
+}
+
+
+/* field */
+.field{
+    border: 0;
+}
+.field legend{
+    float: left;
+    width: 80px;
+}
+.field ul{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.field-flex{
+    display: flex;
+}
+.field-flex p{
+    width: 80px;
+    flex-shrink: 0;
+}
+.field input:enabled label{
+    cursor: pointer;
+}
+.field input:disabled +label{
+    color: #ccc;
+}
+.field input:checked + label{
+    color: royalblue;
+}
+/* input */
+textarea,
+select,
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    height:28px;
+    border:1px solid #ddd;
+    border-radius: 4px;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.btn{
+    
+    border: 1px solid #ccc;
+    background-color: #eee;
+    font: inherit;
+    color: inherit;
+    border-radius: 4px;
+    min-width: 80px;
+    height: 40px;
+    padding: 0 8px;
+    
+}
+a.btn{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* layout */
+.layout-header{
+    height: 80px;
+    padding: 0 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.layout-header div{
+    display: flex;
+    gap: 15px;
+}
+
+.layout-header div *{
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: 0;
+}
+
+.layout-footer{
+    text-align: center;
+    background-color: #eee;
+    padding: 30px 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 60px;
+}
+main{
+    flex-grow: 1;
+}
+.index-h1{
+    text-decoration: none;
+    color: inherit;
+}

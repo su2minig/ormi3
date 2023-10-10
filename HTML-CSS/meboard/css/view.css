@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.view{
+    width: 1000px;
+    margin: auto;
+}
+
+.view-header{
+    background-color: #ddd;
+    border-top:2px solid black;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+.view-info{
+    display: flex;
+    margin-top: 10px;
+}
+.view-info p:not(:first-child)::before{
+    content:'|';
+    color: #aaa;
+    margin: 0 20px;
+}
+.view-contents{
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.view-contents ol,
+.view-contents li{
+    list-style-position: inside;
+}
+.view h2,
+.view-header h3,
+.view-contents h4,
+.view-contents strong{
+    font-family: 'Pretendard-Bold';
+}
+
+.view-contents h4{
+    margin-top: 30px;
+}
+.view-contents ol{
+    margin-top: 20px;
+}

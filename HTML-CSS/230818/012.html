@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        div * {
+            border: 2px solid red;
+            padding: 10px;
+        }
+        h1 {
+            text-decoration: underline;
+        }
+        p{
+            background-color: skyblue;
+        }
+        #hello {
+            font-weight: bold;
+        }
+        .hello2 {
+            color: gray;
+        }
+        .안녕 {
+            color: yellow;
+        }
+        [type="button"]{
+            width: 300px;
+        }
+        [class="hello2"]{
+            border-color: pink;
+        }
+        h1, .안녕 {
+            border-width: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div style="color:blue">
+        <h1 class="hello2">Hello</h1>
+        <h2>Hello</h2>
+        <p id="hello">Hello</p>
+        <p class="hello2">Hello</p>
+        <p class="안녕">Hello</p>
+        <p class="hello2">Hello</p>
+        <button type="button">헬로</button>
+        <button type="submit">헬로</button>
+    </div>
+</body>
+</html>

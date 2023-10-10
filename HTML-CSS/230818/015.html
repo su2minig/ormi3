@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조적가상선택자</title>
+    <style>
+        li:first-child{
+            color:red;
+            border: 1px solid red;
+        }
+        li:last-child{
+            color: green;
+        }
+        li:nth-child(2){
+            color: yellow;
+        }
+        li:not(:first-child){
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>list</li>
+        <ol>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+        </ol>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ol>
+</body>
+</html>

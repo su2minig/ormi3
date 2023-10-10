@@ -1,0 +1,35 @@
+h1{
+    margin: 20px 870px;
+}
+p{
+    margin: 30px 750px;
+    font-weight: bold;
+    color: rgb(166, 166, 166);
+}
+
+div{
+    margin: 10px 700px;
+    text-align: left;
+    font-weight: bold;
+}
+#user-id{
+    margin-left: 30px;
+}
+#user-pw{
+    margin-left: 14px;
+}
+input:not(#id-save){
+    width: 355px;
+    height: 30px;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 5px;
+}
+button{
+    background-color: rgb(74, 104, 217);
+    width: 450px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}

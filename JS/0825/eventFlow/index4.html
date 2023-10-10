@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 앵커의 기본 동작을 중지 -->
+<a href="https://www.naver.com" class="link">네이버 링크입니다만..</a>
+<script>
+    const link = document.querySelector('.link');
+    
+</script>
+
+<!-- submit 의 기본 동작을 중지 -->
+<form action="">
+    <button type="submit" class="submit">제출</button>
+</form>
+<script>
+    document.querySelector("a").addEventListener("click",(event) =>{
+        event.preventDefault();
+        console.log("와 클릭");
+    })
+    
+</script>
+</body>
+</html>

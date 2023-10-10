@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style>
+    .container1,
+    .container2 {
+    height: 700px;
+    width: 300px;
+    display: flex;
+    border: 2px solid #000;
+    flex-wrap: wrap;
+    }
+
+    .container1 {
+    align-items: start;
+    }
+
+    .container2 {
+    align-content: start;
+    }
+
+    .item {
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    }
+
+    .item:nth-child(odd) {
+    background-color: gold;
+    }
+</style>
+</head>
+
+<body>
+<div class="container1">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+</div>
+
+<div class="container2">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+</div>
+
+</body>
+
+</html>

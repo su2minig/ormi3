@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const users = [
+        {
+            "_id": "6271fd40fe5c58d4cbd3a72f",
+            "index": 0,
+            "guid": "60f843d2-1b6b-4536-b421-e5df1c4ab735",
+            "isActive": true,
+            "balance": "$2,534.11",
+            "picture": "http://placehold.it/32x32",
+            "age": 27,
+            "eyeColor": "brown",
+            "name": "Miranda Nguyen",
+            "gender": "male",
+            "company": "ZENTIA",
+            "email": "mirandanguyen@zentia.com",
+            "phone": "+1 (833) 466-3207",
+            "address": "198 Dank Court, Hartsville/Hartley, Indiana, 8416",
+            "about": "Consectetur proident anim do commodo ipsum. Elit consectetur irure dolore voluptate. Enim aute voluptate et qui do. Eu pariatur laboris labore esse enim reprehenderit mollit ullamco fugiat. Laborum sunt veniam consectetur laboris cupidatat. Lorem tempor occaecat labore ut et eiusmod amet.\r\n",
+            "registered": "2021-06-16T11:50:54 -09:00"
+        },
+        {
+            "_id": "6271fd40e30856d15651c60c",
+            "index": 1,
+            "guid": "ee647592-0647-4ad5-96b1-eb6c06a32dbd",
+            "isActive": true,
+            "balance": "$2,636.22",
+            "picture": "http://placehold.it/32x32",
+            "age": 35,
+            "eyeColor": "blue",
+            "name": "Florence Flynn",
+            "gender": "female",
+            "company": "ELENTRIX",
+            "email": "florenceflynn@elentrix.com",
+            "phone": "+1 (901) 525-3731",
+            "address": "246 Billings Place, Brandermill, Guam, 5037",
+            "about": "Sint non dolore cupidatat voluptate laboris adipisicing eu quis. Laboris nostrud qui dolor cillum dolor nulla sint culpa est reprehenderit sint ipsum nisi excepteur. Qui cupidatat sint do aliquip ut. Officia est aliquip fugiat ex enim do sunt consequat.\r\n",
+            "registered": "2014-12-10T08:44:47 -09:00"
+        },
+        {
+            "_id": "6271fd404394e16d79143873",
+            "index": 2,
+            "guid": "3d3890ff-8241-4a2b-a361-789e0298817a",
+            "isActive": false,
+            "balance": "$1,047.32",
+            "picture": "http://placehold.it/32x32",
+            "age": 25,
+            "eyeColor": "green",
+            "name": "Debbie Pratt",
+            "gender": "female",
+            "company": "OPTIQUE",
+            "email": "debbiepratt@optique.com",
+            "phone": "+1 (831) 537-3188",
+            "address": "737 Quentin Street, Calpine, Louisiana, 9102",
+            "about": "Officia nisi labore mollit cupidatat exercitation commodo duis adipisicing officia amet laborum. Nulla qui commodo aliqua reprehenderit dolore cupidatat esse ea pariatur sint ad dolore. Exercitation duis veniam velit occaecat est irure quis labore occaecat.\r\n",
+            "registered": "2016-09-19T10:00:38 -09:00"
+        }
+    ]
+    //1번문제
+    const newusers = users.map((info)=>{
+        return{"id":info._id,"name":info.name,"age":info.age}
+    });
+    console.log(newusers);
+    // const user_id = users.map((a)=> a._id);
+    // const user_name = users.map((a)=>a.name);
+    // const user_age = users.map((a)=>a.age);
+    // 2번문제
+    const age27 = users.map((info)=>{
+        if (info.age>=27){
+            return {"id":info._id};
+        }
+    })
+    console.log(age27);
+    //3번문제
+    const user_name  = users.map((info)=>{
+        if (info._id==="6271fd40e30856d15651c60c"){
+            return {name:info.name}
+        }
+    })
+    console.log(user_name);
+    //4번
+    const user_age = users.map((info)=>{
+        return info.age
+    })
+    console.log(user_age);
+    const sum = user_age.reduce((x,y)=>x+y,0);
+    console.log(sum);
+    const people = Object.keys(users).length;
+    console.log(people);
+    const Avg = sum/people;
+    console.log(Avg);
+    //5번
+    let male = 0;
+    let female = 0;
+    const gender = users.map((info)=>{
+        if (info.gender==="male"){
+            return male++
+        }
+        else{
+            return female++
+        }
+    })
+    console.log("남성:",male,"여성:",female);
+    // console.log(`${male}:${female}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.list{
+    width: 1000px;
+    margin:auto;
+}
+
+.list table{
+    border-collapse: collapse;
+    border-top: 2px solid black;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    text-align: center;
+}
+.list table th{
+    background-color: #eee;
+}
+
+.list table td{
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.list table th{
+    padding: 8px;
+}
+.list table td{
+    padding:16px 8px;
+}
+
+.list table a{
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+.list-title{
+    text-align: left;
+}

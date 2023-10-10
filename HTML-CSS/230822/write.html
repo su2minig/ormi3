@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 글작성</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="001.css">
+</head>
+<body>
+    <!-- header -->
+    
+    <main class="writeboard">
+        <h2 class="title">글쓰기</h2>
+        <h3 class="hint">내용을 입력해 주세요</h3>
+        <form class="main-form" action="">
+            <div>
+                <label for="category back">카테고리</label>
+                <select name="category" id="category" required>
+                    <option value="category1">일반</option>
+                    <option value="category2">공지사항</option>
+                </select>
+            </div>
+            <div>
+                <label for="detail-title back">제목</label>
+                <input id="detail-title" type="text">
+            </div>
+            <div>
+                <label for="detail back">내용</label>
+                <input id="detail" type="text">
+            </div>
+            <div>
+                <label for="file back">파일첨부</label>
+                <input id="file" type="file">
+            </div>
+            <div>
+                <a href="">목록</a>
+                <input id="reset" type="reset">
+                <button id="write" type="submit">작성</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

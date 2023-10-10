@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="alert-box" id="alert"><p id="title">아이디입력하세요</p>
+        <button id="close">닫기</button>
+    </div>
+    <button onclick="알림창('아이디입력하셈');">버튼1</button>
+    
+    <button onclick="알림창('비밀번호입력하셈');">버튼2</button>
+
+
+    <script>
+        // addEventListener(이벤트명,파라미터)
+        document.getElementById('close').addEventListener('click', function(){ //콜백함수
+            document.getElementById('alert').style.display ='none';
+        });
+        // getElementById => id로 찾기
+        // getElementsByClassName()[숫자] => 숫자번째 class로 찾기
+        function 알림창(title){
+            document.getElementById('title').innerHTML = title;
+            document.getElementsByClassName('alert-box')[0].style.display = 'block'
+        }
+        // function 아이디알림창(){
+        //     document.getElementById('title').innerHTML = '아이디입력하셈';
+        //     document.getElementById('alert').style.display = 'block'
+        // }
+        // function 비밀번호알림창(){
+        //     document.getElementById('title').innerHTML = '비밀번호입력하셈';
+        //     document.getElementById('alert').style.display = 'block'
+        // }
+        function 알림창열고닫기(파라미터){
+            document.getElementById('alert').style.display = 파라미터
+        }
+        // function 알림창닫기(){
+        //     document.getElementById('alert').style.display ='none'
+        // }
+        // function 알림창열기(){
+        //     document.getElementById('alert').style.display ='block'
+        // }
+    </script>
+</body>
+</html>

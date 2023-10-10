@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const test=5;
+        // if(test<10){
+        //     console.log("참입니까?");
+        // }
+        // if(test<10){
+        //     console.log("참입니다");
+        // }
+        // else{
+        //     console.log("거짓입니다")
+        // }
+
+        const arr = [1, 2, 3];
+
+        function callbackfn(item){
+            let a;
+            if (item%2===1){
+                a = "홀수"
+            }
+            else {
+                a = "짝수"
+            }
+            return a
+        }
+        console.log(arr.map(callbackfn))
+        console.log(a)
+    </script>
+</body>
+</html
