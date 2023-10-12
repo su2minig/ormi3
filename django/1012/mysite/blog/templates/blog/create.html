@@ -1,0 +1,15 @@
+<!-- <form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }} -->
+    <!-- <table>{{ form.as_table }}</table> -->
+    <!-- {{ form.as_ul }}        ol은 안된다 -->
+    <!-- {{ form.title }}        하나씩할때 -->
+    <!-- {{ form.contents }}
+    {{ form }}
+    <input type="submit">
+</form>-->
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit">
+</form>
