@@ -1,0 +1,6 @@
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit">
+</form>
+<a href="{% url 'blog' %}">뒤로가기</a>
