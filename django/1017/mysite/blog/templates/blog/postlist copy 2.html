@@ -1,0 +1,11 @@
+{% for i in posts %}
+    <h1>{{ i.title }}</h1>
+    <p>{{i.content}}</p>
+    <p>{{forloop.counter}}</p>
+    <p>{{forloop.counter0}}</p>
+    <p>{{forloop.counter|add:99}}</p>
+    <p>{{forloop.revcounter}}</p>
+    <p>{{forloop.first}}</p>
+    <p>{{forloop.last}}</p>
+    <hr>
+{% endfor %}
