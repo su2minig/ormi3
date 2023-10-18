@@ -1,0 +1,17 @@
+<form action="" method="get">
+    <input name="q" type="search">
+    <button type="submit">검색</button>
+</form>
+
+
+<ul>
+    {% for i in posts %}
+    <li>
+        <a href="{% url 'postdetail' i.id %}">
+            <h1>{{ i.title }}</h1>
+            <p>{{ i.content }}</p>
+            <p>{{ i.author }}</p>
+        </a>
+    </li>
+    {% endfor %}
+</ul>

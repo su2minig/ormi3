@@ -24,6 +24,7 @@ def post(request, pk):
 
 @login_required
 def create(request):
+    # print(request)
     if request.method == 'POST':
         form = PostForm(request.POST)
         if form.is_valid():
