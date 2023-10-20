@@ -25,11 +25,38 @@
                 </nav>
             );
         }
-        // nav , slide, card, footer가 각각 component라고 부릅니다
+
+        function Slide(props) {
+            return (
+                <div>
+                    슬라이드
+                </div>
+            );
+        }
+
+        function Card(props) {
+            return (
+                <section>
+                    <h2>카드입니다</h2>
+                    <p>카드내용입니다</p>
+                </section>
+            );
+        }
+
+        function Footer(props) {
+            return (
+                <footer>
+                    <p>footer</p>
+                    </footer>
+            );
+        }
+        
+        // Nav , Slide, Card, footer가 각각 component라고 부릅니다
         const app = (
             <div>
                 <Nav/>
                 <Slide/>
+                {/* Card가 3개 반복 */}
                 <Card/>
                 <Card/>
                 <Card/>
