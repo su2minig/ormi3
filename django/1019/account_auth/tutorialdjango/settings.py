@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-p$^5&y$-l6)-o4!j5jnc_$u9*k#28!uvt5ttfl7#q=rh!d*pys'
+SECRET_KEY = 'django-insecure-#a=^3-20bv&ydf&a)d$r!vd4fl56nyc$k%l5d)4upa@0ma9(oe'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     # custom app
     'blog',
 ]
+
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware', #최상단 추가
     'django.middleware.security.SecurityMiddleware',
@@ -129,10 +130,12 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
