@@ -14,11 +14,16 @@ class PostList(ListView):
         queryset = super().get_queryset()
 
         # request의 GET 파라미터에서 'q'를 가져옵니다.
+        print('포인트')
+        print(self)
+        print(self.request)
+        print(self.request.GET)
         q = self.request.GET.get('q', '')
 
         # 'q' 파라미터가 제공되었을 경우, 쿼리셋을 필터링합니다.
         if q:
             queryset = queryset.filter(Q(title__icontains=q) | Q(content__icontains=q))
+        print(queryset)
         return queryset
 
 

@@ -6,7 +6,10 @@ from .forms import PostForm
 def blog(request):
     if request.GET.get('q'):
         q = request.GET.get('q')
+        print('시작')
+        print(q)
         db = Post.objects.filter(Q(title__icontains=q) | Q(contents__icontains=q)).distinct()
+        print(db)
     else:
         db = Post.objects.all()
     context = {
